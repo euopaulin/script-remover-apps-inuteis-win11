@@ -1,0 +1,1 @@
+# script-remover-apps-in-teis-win11
