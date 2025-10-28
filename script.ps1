@@ -9,7 +9,7 @@ function Remove-WindowsApp {
 
     Write-Host "Processando... '$PackageName'..."
 
-    # 1. Encontra o pacote usando a busca flexível (o que é crucial)
+    # 1. Encontra o app
     $appPackage = Get-AppxPackage -AllUsers | Where-Object { $_.Name -like "*$PackageName*" }
 
     if ($null -eq $appPackage) {
@@ -73,7 +73,7 @@ $AppsParaRemover = @(
 )
 
 Write-Host "Iniciando rotina de limpeza de Bloatware do Windows 11..." -ForegroundColor Cyan
-Write-Host "ATENÇAO: Este script sera executado com o parametro -AllUsers, exigindo permissaoes de Administrador." -ForegroundColor Yellow
+Write-Host "ATENÇAO: Este script sera executado com o parametro -AllUsers, exigindo permissoes de Administrador." -ForegroundColor Yellow
 Write-Host "====================================================================="
 
 foreach ($App in $AppsParaRemover) {
