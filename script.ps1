@@ -67,7 +67,7 @@ $AppsParaRemover = @(
     "WindowsAlarms", # Alarmes e Relógio
     "WindowsFeedbackHub", # Hub de Feedback do Windows
     "WindowsMaps", # Mapas do Windows
-    "OneDrive" # OneDrive
+    "Microsoft.OneDrive" # OneDrive
 
     # Adicione outros termos conforme necessário!
 )
